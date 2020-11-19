@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Disqus from "disqus-react"
-import * as Constants from './Constants';
+import * as Constants from '../Constants';
 
 export default class DisqusInserter extends Component {
   render() {

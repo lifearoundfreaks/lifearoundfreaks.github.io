@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Constants from './Constants';
+import * as Constants from '../Constants';
 
 export default class AjaxButton extends React.Component {
 
