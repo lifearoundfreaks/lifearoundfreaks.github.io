@@ -20,6 +20,7 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "disqus-react": "^1.0.10",
     "gh-pages": "^3.1.0",
     "prettier": "2.1.2"
   },

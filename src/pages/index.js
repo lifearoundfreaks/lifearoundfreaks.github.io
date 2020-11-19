@@ -1,5 +1,14 @@
-import React from "react"
+import React from 'react';
+import AjaxButton from './AjaxButton';
+import DisqusInserter from './Disqus';
 
-export default function Home() {
-  return <div>Hello world!</div>
+function App() {
+  return (
+    <div className="App">
+      <AjaxButton />
+      <DisqusInserter />
+    </div>
+  );
 }
+
+export default App;
