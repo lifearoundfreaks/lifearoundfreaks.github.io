@@ -1,6 +1,6 @@
 import React from 'react';
-import AjaxButton from './ajaxButton';
-import DisqusInserter from './disqus';
+import AjaxButton from '../imports/ajaxButton';
+import DisqusInserter from '../imports/disqus';
 import "../styles/global.css";
 
 function App() {
