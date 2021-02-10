@@ -1,23 +1,20 @@
-import React, { Component } from "react"
+import React from "react"
 import Disqus from "disqus-react"
-import * as Constants from '../Constants';
+import * as Constants from '../constants';
 
-export default class DisqusInserter extends Component {
-  render() {
-    const disqusShortname = Constants.DISQUS_SHORTNAME
-    const disqusConfig = {
+const DisqusInserter = () => {
+  return (
+    <div className="comments-container">
+    <Disqus.DiscussionEmbed
+    shortname={Constants.DISQUS_SHORTNAME}
+    config={{
       url: Constants.APP_URL,
       identifier: "index",
       title: "Main page"
-    }
-
-    return (
-      <div className="comments-container">
-        <Disqus.DiscussionEmbed
-          shortname={disqusShortname}
-          config={disqusConfig}
-        />
-      </div>
+    }}
+    />
+    </div>
     )
   }
-}
+  export default DisqusInserter;
+  
