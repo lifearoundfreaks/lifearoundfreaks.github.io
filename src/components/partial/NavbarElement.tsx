@@ -8,7 +8,11 @@ interface NavbarElementProps {
 
 const NavbarElement: FC<NavbarElementProps> = ({ href, children }) => {
     return <NavLink
-        to={href}>{children}
+        to={href}
+        activeStyle={{ fontWeight: "bold", pointerEvents: "none" }}
+        exact
+    >
+        {children}
     </NavLink>
 }
 

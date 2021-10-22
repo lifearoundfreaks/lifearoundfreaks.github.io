@@ -13,7 +13,11 @@ const SideMenuElement: FC<SideMenuProps> = ({ href, depth, children }) => {
             to={href}
             className={`link depth-${depth}`}
             style={{ marginLeft: 20 * depth }}
-        >{children}</NavLink>
+            activeStyle={{ fontWeight: "bold", pointerEvents: "none" }}
+            exact
+        >
+            {children}
+        </NavLink>
     </>
 }
 
