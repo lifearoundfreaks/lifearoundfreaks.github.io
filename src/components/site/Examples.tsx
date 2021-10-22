@@ -24,7 +24,7 @@ const Examples: FC = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img src={`images/example${exampleNumber}.jpg`} alt={`Example ${exampleNumber}`} />
+                                <img src={`/images/example${exampleNumber}.jpg`} alt={`Example ${exampleNumber}`} />
                             </a>
                             <h3>{t(`example${exampleNumber} header`)}</h3>
                             <p>{t(`example${exampleNumber} shorttext`)}</p>
@@ -46,7 +46,7 @@ const Examples: FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src={`images/example${exampleNumber}.jpg`} alt={`Example ${exampleNumber}`} />
+                            <img src={`/images/example${exampleNumber}.jpg`} alt={`Example ${exampleNumber}`} />
                         </a>
                         <h3>{t(`example${exampleNumber} header`)}</h3>
                         <p>{t(`example${exampleNumber} paragraph1`)}</p>
