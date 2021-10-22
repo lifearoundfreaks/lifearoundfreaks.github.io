@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { MainPage, Blog, About, Credits } from './components/site'
+import { MainPage, Examples, About, Credits } from './components/site'
 import { Navbar, Footer } from './components/partial'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -12,7 +12,7 @@ const App: FC = () => {
         <NavLink to='/'>LifeAroundFreaks</NavLink>
     } links={[
       { link: '/', linkName: t('Home') },
-      {link: '/blog', linkName: t('Blog') },
+      {link: '/examples', linkName: t('Examples') },
       { link: '/about', linkName: t('About'), children: [
         { link: '/about', linkName: t('General info') },
         { link: '/credits', linkName: t('Credits') },
@@ -20,7 +20,7 @@ const App: FC = () => {
     ]} />
     <Switch>
       <Route path='/' exact><MainPage /></Route>
-      <Route path='/blog'><Blog /></Route>
+      <Route path='/examples'><Examples /></Route>
       <Route path='/about'><About /></Route>
       <Route path='/credits'><Credits /></Route>
     </Switch>

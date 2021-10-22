@@ -49,11 +49,104 @@ const resources = {
         "api info details": "During my years of working in web development, I learned to both provide and consume API, as well as some nuances of that.",
         "git info header": "Working with VCS",
         "git info details": "It goes without saying but learning how to work with version control systems like git is also an important part of being a developer.",
+        // Examples content
+        "examples sub header": "Some examples of my completed projects",
+        "example1 url": "https://lifearoundfreaks.github.io/barotrauma-calc/",
+        "example1 header": "Crafting calculator",
+        "example1 shorttext": `
+        A calculator tool for a video game called Barotrauma. Helps with finding the
+        most efficient way to spend your crafting resources cost-wise.
+        `,
+        "example1 paragraph1": `
+        I love Barotrauma, it is a very atmospheric horror indie game with a vast
+        amount of side activities. One of those activities is crafting. It has a good
+        wiki describing various game items and recipes. But the wiki is often outdated
+        and sometimes doesn't have important bits of information. You are also not always
+        sure what best to do with your resources, since there is a lot of ways to spend them.
+        So I often had to code-dive (this game is partly open-source) to figure out the game mechanics.
+        `,
+        "example1 paragraph2": `
+        At some point, I got tired of digging through XML files in search of good recipes and
+        decided to create my own tool to quickly look up profitable ways to spend money and resources.
+        I wrote a Python parser that collects all the relevant data from the game folder and a React
+        app to display this info in various useful ways. I'm quite proud of this project since I did
+        it while learning React and having to figure out how game mechanics work to recreate that in my calculator.
+        `,
+        "example2 url": "https://feya-bilyzna.github.io/",
+        "example2 header": "Online lingerie store",
+        "example2 shorttext": `
+        Online store built from the ground up with React, Django, and Materialize CSS.
+        It is a collaboration project in which I did all of the back-end and some front-end functionality too.
+        `,
+        "example2 paragraph1": `
+        This may still be in the works as I am writing this, but most of the functionality
+        should already be working. This was done in collaboration with my friend as we
+        learned GraphQL and how to work with API in React applications. I provided API
+        and Django admin back-end endpoints as the means to work with the customer orders
+        while my friend wrote the React application that consumes said API. I also wrote
+        parts of it too as this is the first web project for my friend.
+        `,
+        "example2 paragraph2": `
+        While we were just a team of two, it was still an interesting experience,
+        as we had to figure out work priorities and our team roles along the way.
+        I got to teach my friend a lot of things about developing a web app while
+        also learning some new things myself. It wasn't the fastest development
+        process because I tried not to rush things too much and we basically built
+        our own web store engine (if a bit simplistic) from scratch.
+        `,
+        "example3 url": "https://github.com/lifearoundfreaks/vodokanal-parser",
+        "example3 header": "Excel parser",
+        "example3 shorttext": `
+        An Excel spreadsheet parser that I wrote to help reduce redundant bureaucracy.
+        Consumes spreadsheets that are formatted in a certain way and outputs a new
+        registry spreadsheet with some relevant data.
+        `,
+        "example3 paragraph1": `
+        A relative of mine works in a government company with a somewhat outdated
+        consumable material accounting system. They were tasked with the incredibly
+        routine work of moving contents from order spreadsheets to a registry spreadsheet,
+        one at a time. I've made this not terribly sophisticated program to automate
+        large chunks of their work for them.
+        `,
+        "example3 paragraph2": `
+        With this project, I have improved my skill of working with spreadsheets programmatically.
+        As well as learning to format them using only Python.
+        I may have to finalize my parser at some point later, since,
+        there are still things that my relative has to do manually,
+        but for now I am fairly limited in the necessary data I have access to.
+        `,
+        "example4 url": "https://github.com/lifearoundfreaks/youtube-download",
+        "example4 header": "Video-cropping bot",
+        "example4 shorttext": `
+        Telegram bot that takes a youtube link with optional timestamps and
+        crops up to a 1-minute portion of said video. Useful, when you want
+        to show someone a short portion of a youtube clip but not send them the entire video.
+        `,
+        "example4 paragraph1": `
+        A lot of Youtube downloader services do not provide the complete set of
+        resolutions when you try to download a video. The reason is that most
+        higher resolutions use adaptive streams instead of progressive and that
+        complicates things somewhat for the downloading party. So a lot of services
+        deal with it by just not dealing with it at all and only allowing you to
+        download in lower resolutions (or without sound/sound only). At first,
+        this project was an attempt to solve that issue while also bringing in
+        the convenience of being a telegram bot.
+        `,
+        "example4 paragraph2": `
+        However, it quickly became apparent that @utubebot already implemented
+        that pretty well. That and the fact that I tried to bring in the crop
+        feature which collided with the adaptive streams conversion feature and
+        became resource-intensive. Being resource-intensive was not in my plans
+        at all, since I used free Heroku hours to deploy this project and was
+        fairly limited in that regard. So instead I dialed the whole thing down
+        and now this is a simple service for cropping small portions of youtube
+        videos (I limited it to 1-minute portions).
+        `,
     } },
     ru: { translation: {
         // Navbar
         "Home": "Главная",
-        "Blog": "Блог",
+        "Examples": "Примеры",
         "About": "Обо мне",
         "General info": "Общая информация",
         "Credits": "Источники",
@@ -64,6 +157,10 @@ const resources = {
         "About my experience": "О моем опыте",
         "Some points about what I learned along the way": "Подробнее о вещах, которым я научился, будучи разработчиком",
         "Learn more": "Узнать больше",
+        "See more": "Увидеть больше",
+        "Examples of my work": "Примеры моих работ",
+        "My github page": "Моя страница github",
+        "More about me": "Больше обо мне",
         // Landing content
         "mainpage one header": "Бэкграунд",
         "mainpage one subheader": "Будучи программистом-любителем более десяти лет, получил также как фронтендный, так и бэкендный профессиональный опыт",
@@ -110,6 +207,96 @@ const resources = {
         "api info details": "За годы веб-разработки я научился как предоставлять, так и использовать API, а также некоторым нюансам этого.",
         "git info header": "Работа с VCS",
         "git info details": "Возможно упоминание будет лишним, однако умение работы с системами контроля версий, такими как git, также является важной частью работы разработчика.",
+        // Examples content
+        "examples sub header": "Некоторые примеры моих реализованных проектов",
+        "example1 header": "Калькулятор для крафта",
+        "example1 shorttext": `
+        Калькулятор для видеоигры под названием Barotrauma. Помогает найти
+        самый эффективный способ потратить игровые ресурсы с ценовой точки зрения.
+        `,
+        "example1 paragraph1": `
+        Я люблю Barotrauma, это очень атмосферная хоррор инди-игра с огромным
+        количеством сторонних занятий. Одно из таких занятий - производство предметов. У игры хорошая
+        вики с описанием различных игровых предметов и рецептов. Однако, вики часто устаревает
+        а иногда не содержит важной информации. Также, не всегда можно быть
+        уверенным, на что лучше всего потратить ресурсы, поскольку таких способов много.
+        Поэтому мне часто приходилось нырять в код (у игры частично открытый исходный код),
+        чтобы понять ту или иную механику игры.
+        `,
+        "example1 paragraph2": `
+        В какой-то момент мне надоело копаться в XML-файлах в поисках хороших рецептов и я
+        решил создать свой собственный инструмент для быстрого поиска выгодных способов потратить деньги и ресурсы.
+        Я написал Python парсер, который собирает все необходимые данные из папки с игрой, а также React
+        приложение, чтобы отображать эту информацию различными информативными способами. Я довольно сильно
+        горжусь этим проектом, поскольку изучал на нем возможности React и разбирался, как работает игровая механика,
+        чтобы воссоздать это в моем калькуляторе.
+        `,
+        "example2 header": "Онлайн магазин белья",
+        "example2 shorttext": `
+        Интернет-магазин, созданный с нуля на React, Django и Materialize CSS.
+        Это совместный проект, в котором я делал бэкенд, а также части фронтенда.
+        `,
+        "example2 paragraph1": `
+        На момент написания, проект может быть еще не завершен, однако большая часть функционала
+        уже должна работать. Сайт был сделан совместно с моим другом и в процессе мы учили GraphQL,
+        а также осваивали работу с API в React-приложениях. Я предоставил API энд-поинты и инструменты
+        администрирования Django в качестве способа работы с заказами,
+        в то время как мой друг написал приложение React, которое использует вышеупомянутое API. Также, я
+        писал части фронтенда, ведь это первый веб-проект для моего друга.
+        `,
+        "example2 paragraph2": `
+        Хотя нас и было только двое, это был интересный опыт,
+        поскольку нам приходилось определять рабочие приоритеты и наши командные роли по ходу дела.
+        В процессе мне пришлось многое подсказывать своему другу, да и сам я
+        научился нескольким новым вещам. Это был не самый быстрый процесс разработки,
+        потому что я старался не торопить проект, да и ко всему, мы, по сути, писали
+        наш собственный движок интернет-магазина (пусть и простой) с нуля.
+        `,
+        "example3 header": "Excel парсер",
+        "example3 shorttext": `
+        Excel парсер таблиц, который я написал для устранения излишней бюрократии.
+        Принимает таблицы, отформатированные определенным образом, и создает новую
+        таблицу реестра, в которую переносятся соответствующие данные.
+        `,
+        "example3 paragraph1": `
+        Мой родственник работает в государственной компании с несколько устаревшей
+        системой учета расходных материалов. Часть работы заключалась в неимоверно
+        рутинной задаче по переносу части содержимого из таблиц заказов в таблицу реестра,
+        причем поштучно. Я написал эту не очень сложную программу для автоматизации
+        значительной части данной работы.
+        `,
+        "example3 paragraph2": `
+        В этом проекте я улучшил свои навыки программной работы с электронными таблицами.
+        А также научился их форматировать, используя только Python.
+        В какой-то момент мне, возможно, придется дуработать свой парсер, поскольку
+        еще остались вещи, которые мой родственник должен делать вручную,
+        однако, на данный момент я довольно ограничен в необходимых данных, которые я могу использовать.
+        `,
+        "example4 header": "Бот для обрезки видео",
+        "example4 shorttext": `
+        Telegram-бот, который принимает ссылку на YouTube с опциональными отметками времени и
+        обрезает части указанного видео не более одной минуты. Полезно, когда необходимо
+        показать кому-то короткую часть клипа на YouTube, но не отправить ему все видео.
+        `,
+        "example4 paragraph1": `
+        Многие сервисы загрузки Youtube не предоставляют полный набор
+        разрешений при попытке загрузить видео. Причина в том, что большинство
+        высоких разрешений используют адаптивные потоки вместо прогрессивных, и это
+        несколько усложняет загрузку. И многие сервисы банально не предоставляют
+        возможности скачивать в более высоком разрешении (или скачивание ограничено беззвучной/звуковой дорожкой).
+        Вначале, этот проект был попыткой решить данную проблему, принося помимо этого
+        удобство обращения с Telegram-ботами.
+        `,
+        "example4 paragraph2": `
+        Однако быстро стало очевидно, что @utubebot уже реализовал
+        данный функционал очень хорошо. Кроме того, я пытался добавить функцию обрезки видео,
+        которая начала вызывать проблемы в сочетании с функцией объединения адаптивных потоков, становясь ресурсоемкой.
+        Ресурсоемкость совершенно не входила в мои планы, поскольку я использовал бесплатные часы Heroku
+        для развертывания этого проекта и был довольно ограничен в этом отношении.
+        Поэтому я отказался от многого
+        и теперь это простой сервис для обрезки небольших кусочков Youtube
+        видео (я сделал ограничение в одну минуту).
+        `,
         // About
         "Various info about the assets used in the creation of this site": 
         "Различная информация о ресурсах, использованных при создании этого сайта",
@@ -122,7 +309,7 @@ const resources = {
     ua: { translation: {
         // Navbar
         "Home": "Головна",
-        "Blog": "Блог",
+        "Examples": "Приклади",
         "About": "Про мене",
         "General info": "Загальна інформація",
         "Credits": "Джерела",
@@ -133,6 +320,10 @@ const resources = {
         "About my experience": "Про мій досвід",
         "Some points about what I learned along the way": "Детальніше про речі, яким я навчився, будучи розробником",
         "Learn more": "Дізнатися більше",
+        "See more": "Побачити більше",
+        "Examples of my work": "Приклади моїх робіт",
+        "My github page": "Моя сторінка github",
+        "More about me": "Більше про мене",
         // Landing content
         "mainpage one header": "Бекграунд",
         "mainpage one subheader": "Будучи програмістом-любителем більше десяти років, отримав також як фронтендний, так і бекендний професійний досвід",
@@ -179,6 +370,96 @@ const resources = {
         "api info details": "За роки веб-розробки я навчився як надавати, так і використовувати API, а також деяким нюансам цього.",
         "git info header": "Робота с VCS",
         "git info details": "Можливо згадка буде зайвою, однак вміння роботи з системами контролю версій, такими як git, також є важливою частиною роботи розробника.",
+        // Examples content
+        "examples sub header": "Деякі приклади моїх реалізованих проектів",
+        "example1 header": "Калькулятор для крафта",
+        "example1 shorttext": `
+        Калькулятор для відеоігри під назвою Barotrauma. Допомагає знайти
+        найефективніший спосіб витратити ігрових ресурсів з цінової точки зору.
+        `,
+        "example1 paragraph1": `
+        Я люблю Barotrauma, це дуже атмосферна хоррор інді-гра з величезною
+        кількістю сторонніх занять. Одне з таких занять - виробництво предметів. У гри хороша
+        вікі з описом різних ігрових предметів і рецептів. Однак, вікі часто застаріває
+        а іноді не містить важливої ​​інформації. Також, не завжди можна бути
+        впевненим, на що найкраще витратити ресурси, оскільки таких способів багато.
+        Тому мені часто доводилося пірнати в код (у гри частково відкритий вихідний код),
+        щоб зрозуміти ту чи іншу механіку гри.
+        `,
+        "example1 paragraph2": `
+        У якийсь момент мені набридло копатися в XML-файлах в пошуках хороших рецептів і я
+        вирішив створити свій власний інструмент для швидкого пошуку вигідних способів витратити гроші і ресурси.
+        Я написав Python парсер, який збирає всі необхідні дані з папки з грою, а також React
+        додаток, щоб відображати цю інформацію різними інформативними способами. Я досить сильно
+        пишаюся цим проектом, оскільки вивчав на ньому можливості React і розбирався, як працює ігрова механіка,
+        щоб відтворити це в моєму калькуляторі.
+        `,
+        "example2 header": "Онлайн магазин білизни",
+        "example2 shorttext": `
+        Інтернет-магазин, створений з нуля на React, Django і Materialize CSS.
+        Це спільний проект, в якому я робив бекенд, а також частини фронтенда.
+        `,
+        "example2 paragraph1": `
+        На момент написання, проект може бути ще не завершений, однак більша частина функціоналу
+        вже повинна працювати. Сайт був зроблений спільно з моїм другом і в процесі ми вчили GraphQL,
+        а також освоювали роботу з API в React-додатках. Я надав API енд-поінти і інструменти
+        адміністрування Django як спосіб роботи з замовленнями,
+        в той час як мій друг написав додаток React, яке використовує вищезгадане API. Також я
+        писав частини фронтенда, адже це перший веб-проект для мого друга.
+        `,
+        "example2 paragraph2": `
+        Хоча нас і було тільки двоє, це був цікавий досвід,
+        оскільки нам доводилося визначати робочі пріоритети і наші командні ролі по ходу справи.
+        У процесі мені довелося багато підказувати своєму другові, та й сам я
+        навчився кількох нових речей. Це був не найшвидший процес розробки,
+        тому що я намагався не квапити проект, та й до всього, ми, по суті, писали
+        наш власний движок інтернет-магазину (нехай і простий) з нуля.
+        `,
+        "example3 header": "Excel парсер",
+        "example3 shorttext": `
+        Excel парсер таблиць, який я написав для усунення зайвої бюрократії.
+        Приймає таблиці, відформатовані певним чином, і створює нову
+        таблицю реєстру, в яку переносяться відповідні дані.
+        `,
+        "example3 paragraph1": `
+        Мій родич працює в державній компанії з дещо застарілою
+        системою обліку витратних матеріалів. Частина роботи полягала в неймовірно
+        рутинному завданню по перенесенню частини вмісту з таблиць замовлень в таблицю реєстру,
+        причому поштучно. Я написав цю не дуже складну програму для автоматизації
+        значної частини даної роботи.
+        `,
+        "example3 paragraph2": `
+        У цьому проекті я покращив свої навички програмної роботи з електронними таблицями.
+        А також навчився їх форматувати, використовуючи тільки Python.
+        У якийсь момент мені, можливо, доведеться доопрацювати свій парсер, оскільки
+        ще залишилися речі, які мій родич повинен робити вручну,
+        проте, на даний момент я досить обмежений в необхідних даних, які я можу використовувати.
+        `,
+        "example4 header": "Бот для обрізки відео",
+        "example4 shorttext": `
+        Telegram-бот, який приймає посилання на YouTube з опціональними відмітками часу і
+        обрізає частини зазначеного відео не більше однієї хвилини. Корисно, коли необхідно
+        показати комусь коротку частину кліпу на YouTube, але не відправляти йому все відео.
+        `,
+        "example4 paragraph1": `
+        Багато сервісів для завантаження з Youtube не пропонують повний набір
+        розширень при спробі завантажити відео. Причина в тому, що більшість
+        високих розширень використовують адаптивні потоки замість прогресивних, і це
+        дещо ускладнює завантаження. І багато сервісів банально не надають
+        можливості завантажувати в більш високому розширенні (або завантаження обмежене беззвучною/звуковою доріжкою).
+        Спочатку, цей проект був спробою вирішити дану проблему, приносячи крім цього
+        зручність поводження з Telegram-ботами.
+        `,
+        "example4 paragraph2": `
+        Однак швидко стало очевидно, що @utubebot вже реалізував
+        даний функціонал дуже добре. Крім того, я намагався додати функцію обрізки відео,
+        яка почала викликати проблеми в поєднанні з функцією об'єднання адаптивних потоків, стаючи ресурсномісткою.
+        Ресурсомісткість не входила у мої плани, оскільки я використовував безкоштовні години Heroku
+        для розгортання цього проекту і був досить обмежений в цьому відношенні.
+        Тому я відмовився багато від чого
+        і тепер це простий сервіс для обрізки невеликих шматочків Youtube
+        відео (я зробив обмеження в одну хвилину).
+        `,
         // About
         "Various info about the assets used in the creation of this site": 
         "Різна інформація про ресурси, використані при створенні цього сайту",

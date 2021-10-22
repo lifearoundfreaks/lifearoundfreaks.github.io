@@ -1,6 +1,7 @@
 import { FC } from "react"
 import useScript from 'react-script-hook'
 import { useTranslation } from 'react-i18next'
+import { Link } from "react-router-dom"
 
 const MainPage: FC = () => {
 
@@ -53,12 +54,11 @@ const MainPage: FC = () => {
                 </header>
                 <p>{t("mainpage two paragraph")}</p>
                 <ul className="actions">
-                    <li><a
-                        href='https://github.com/lifearoundfreaks'
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="button">{t("Learn more")}
-                    </a></li>
+                    <li><Link
+                        to='/examples'
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="button">{t("Examples of my work")}
+                    </Link></li>
                 </ul>
             </div>
             <a href="#three" className="goto-next scrolly">Next</a>
@@ -77,7 +77,7 @@ const MainPage: FC = () => {
                         href='https://github.com/lifearoundfreaks'
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="button">{t("Learn more")}
+                        className="button">{t("My github page")}
                     </a></li>
                 </ul>
             </div>
@@ -126,12 +126,11 @@ const MainPage: FC = () => {
                 </div>
                 <footer className="major">
                     <ul className="actions special">
-                        <li><a
-                            href='https://github.com/lifearoundfreaks'
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="button">{t("Learn more")}
-                        </a></li>
+                        <li><Link
+                            to="/about"
+                            onClick={() => window.scrollTo(0, 0)}
+                            className="button">{t("More about me")}
+                        </Link></li>
                     </ul>
                 </footer>
             </div>
