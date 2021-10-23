@@ -7,6 +7,15 @@ const Examples: FC = () => {
     const { t } = useTranslation()
     useScript({ src: '/assets/js/main.js' })
 
+    const additionalLinks: { [key: number]: { url: string, text: string }[] } = {
+        1: [{ url: 'https://github.com/lifearoundfreaks/barotrauma-calc', text: t("Source code") }],
+        2: [
+            { url: 'https://github.com/feya-bilyzna', text: t("Organisation") },
+            { url: 'https://github.com/AlecCross', text: t("My friend") },
+        ],
+        4: [{ url: 'https://telegram.me/youtube_videos_download_bot', text: t("Bot link (may be inactive)") }],
+    }
+
     return <div id="main" className="wrapper style1">
         <div className="container">
             <header className="major">
@@ -17,7 +26,7 @@ const Examples: FC = () => {
 
                 <div className="col-4 col-12-medium">
                     <section id="sidebar">
-                        {[1, 2, 3, 4].map(exampleNumber => <Fragment key={exampleNumber}><section>
+                        {[1, 2, 4, 3].map(exampleNumber => <Fragment key={exampleNumber}><section>
                             <a
                                 href={t(`example${exampleNumber} url`)}
                                 className="image fit"
@@ -40,7 +49,7 @@ const Examples: FC = () => {
                                 </li></ul>
                             </footer>
                         </section>
-                            {exampleNumber < 3 ? <hr /> : <></>}
+                            {exampleNumber != 3 ? <hr /> : <></>}
                         </Fragment>)}
                     </section>
                 </div>
@@ -63,6 +72,23 @@ const Examples: FC = () => {
                         <h3>{t(`example${exampleNumber} header`)}</h3>
                         <p>{t(`example${exampleNumber} paragraph1`)}</p>
                         <p>{t(`example${exampleNumber} paragraph2`)}</p>
+                        {<ul className="actions">
+                            <a
+                                href={t(`example${exampleNumber} url`)}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="button"
+                            >{t("Details")}</a>
+                            {additionalLinks[exampleNumber] ? additionalLinks[exampleNumber].map(
+                                (link: { url: string, text: string }) => <li><a
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="button"
+                                >{link.text}</a></li>
+                            ) : <></>}
+                        </ul>}
+
                     </section>)}</section>
                 </div>
             </div>

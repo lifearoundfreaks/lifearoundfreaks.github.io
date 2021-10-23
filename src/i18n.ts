@@ -159,6 +159,7 @@ const resources = {
         "Some points about what I learned along the way": "Подробнее о вещах, которым я научился, будучи разработчиком",
         "Learn more": "Узнать больше",
         "See more": "Увидеть больше",
+        "Details": "Подробнее",
         "Examples of my work": "Примеры моих работ",
         "My github page": "Моя страница github",
         "More about me": "Больше обо мне",
@@ -298,6 +299,11 @@ const resources = {
         и теперь это простой сервис для обрезки небольших кусочков Youtube
         видео (я сделал ограничение в одну минуту).
         `,
+        // Additional links
+        "Source code": "Исходный код",
+        "Organisation": "Организация",
+        "My friend": "Мой друг",
+        "Bot link (may be inactive)": "Бот (может быть неактивен)",
         // About
         "Various info about the assets used in the creation of this site": 
         "Различная информация о ресурсах, использованных при создании этого сайта",
@@ -326,6 +332,7 @@ const resources = {
         "Some points about what I learned along the way": "Детальніше про речі, яким я навчився, будучи розробником",
         "Learn more": "Дізнатися більше",
         "See more": "Побачити більше",
+        "Details": "Детальніше",
         "Examples of my work": "Приклади моїх робіт",
         "My github page": "Моя сторінка github",
         "More about me": "Більше про мене",
@@ -465,6 +472,11 @@ const resources = {
         і тепер це простий сервіс для обрізки невеликих шматочків Youtube
         відео (я зробив обмеження в одну хвилину).
         `,
+        // Additional links
+        "Source code": "Вихідний код",
+        "Organisation": "Організація",
+        "My friend": "Мій друг",
+        "Bot link (may be inactive)": "Бот (може бути неактивний)",
         // About
         "Various info about the assets used in the creation of this site": 
         "Різна інформація про ресурси, використані при створенні цього сайту",
