@@ -1,14 +1,24 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { MainPage, Examples, About, Credits, NotFound } from './components/site'
 import { Navbar, Footer } from './components/partial'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
+import { useLocation } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import { HelmetProvider } from 'react-helmet-async';
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
 
 const App: FC = () => {
   const { t } = useTranslation()
-  return <HelmetProvider ><Router>
+  return <HelmetProvider ><Router><ScrollToTop />
     <Navbar logo={
       <NavLink to='/' activeStyle={{ fontWeight: "bold", pointerEvents: "none" }} exact>
         {t("lifearoundfreaks' portfolio")}

@@ -74,7 +74,6 @@ const MainPage: FC = () => {
                 <ul className="actions">
                     <li><Link
                         to='/examples'
-                        onClick={() => window.scrollTo(0, 0)}
                         className="button">{t("Examples of my work")}
                     </Link></li>
                 </ul>
@@ -152,7 +151,6 @@ const MainPage: FC = () => {
                     <ul className="actions special">
                         <li><Link
                             to="/about"
-                            onClick={() => window.scrollTo(0, 0)}
                             className="button">{t("More about me")}
                         </Link></li>
                     </ul>
