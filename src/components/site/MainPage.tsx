@@ -17,13 +17,25 @@ const MainPage: FC = () => {
                     <p>{t("This is the personal website I")} <br />
                         {t("created to serve as my portfolio.")}</p>
                 </header>
-                <span className="image"><img src="/images/pic01.jpg" alt="" /></span>
+                <span className="image"><img
+                    src="/images/pic01.jpg"
+                    loading="eager"
+                    alt="Landing"
+                    title="Landing image 1"
+                    width="100%" height="100%"
+                /></span>
             </div>
             <a href="#one" className="goto-next scrolly">Next</a>
         </section>
 
         <section id="one" className="spotlight style1 bottom">
-            <span className="image fit main"><img src="/images/pic02.jpg" alt="" /></span>
+            <span className="image fit main"><img
+                src="/images/pic02.jpg"
+                loading="eager"
+                alt="Landing"
+                title="Landing image 2"
+                width="100%" height="100%"
+            /></span>
             <div className="content">
                 <div className="container">
                     <div className="row">
@@ -46,7 +58,13 @@ const MainPage: FC = () => {
         </section>
 
         <section id="two" className="spotlight style2 right">
-            <span className="image fit main"><img src="/images/pic03.jpg" alt="" /></span>
+            <span className="image fit main"><img
+                src="/images/pic03.jpg"
+                loading="eager"
+                alt="Landing"
+                title="Landing image 3"
+                width="100%" height="100%"
+            /></span>
             <div className="content">
                 <header>
                     <h2>{t("mainpage two header")}</h2>
@@ -65,7 +83,13 @@ const MainPage: FC = () => {
         </section>
 
         <section id="three" className="spotlight style3 left">
-            <span className="image fit main bottom"><img src="/images/pic04.jpg" alt="" /></span>
+            <span className="image fit main bottom"><img
+                src="/images/pic04.jpg"
+                loading="eager"
+                alt="Landing"
+                title="Landing image 1"
+                width="100%" height="100%"
+            /></span>
             <div className="content">
                 <header>
                     <h2>{t("mainpage three header")}</h2>

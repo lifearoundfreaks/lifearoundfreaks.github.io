@@ -145,6 +145,7 @@ const resources = {
     } },
     ru: { translation: {
         // Navbar
+        "lifearoundfreaks' portfolio": "Портфолио lifearoundfreaks",
         "Home": "Главная",
         "Examples": "Примеры",
         "About": "Обо мне",
@@ -305,9 +306,13 @@ const resources = {
         // Footer
         "Made by lifearoundfreaks": "Сайт сделан lifearoundfreaks",
         "Design by": "Дизайн сделан",
+        // 404
+        "404 - Page not found": "404 - Страница не найдена",
+        "The page you were searching for does not seem to exist.": "Похоже, что страница, которую вы искали, не найдена",
     } },
-    ua: { translation: {
+    uk: { translation: {
         // Navbar
+        "lifearoundfreaks' portfolio": "Портфоліо lifearoundfreaks",
         "Home": "Головна",
         "Examples": "Приклади",
         "About": "Про мене",
@@ -468,6 +473,9 @@ const resources = {
         // Footer
         "Made by lifearoundfreaks": "Сайт зроблено lifearoundfreaks",
         "Design by": "Дизайн створено",
+        // 404
+        "404 - Page not found": "404 - Сторінку не знайдено",
+        "The page you were searching for does not seem to exist.": "Схоже, що сторінку, яку ви шукали, не знайдено",
     } },
 }
 

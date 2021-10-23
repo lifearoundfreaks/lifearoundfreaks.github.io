@@ -1,5 +1,8 @@
 import { FC, ReactNode, useState } from 'react'
+import { useLocation } from 'react-router';
 import { NavbarElement, SideMenu, LanguageChanger } from '.'
+import packageJson from '../../../package.json';
+import { Helmet } from "react-helmet-async"
 
 interface NavbarElementProps {
     logo?: ReactNode,
@@ -15,6 +18,20 @@ export interface ActiveMenus {
 }
 
 const Navbar: FC<NavbarElementProps> = ({ logo, links }) => {
+
+    const location = useLocation()
+    const remoteUrl = 'https://' + packageJson.name + location.pathname
+    const pagesSubdescription: any = {
+        '/': 'Homepage.',
+        '/examples/': 'Examples of my work.',
+        '/about/': 'More about me.',
+        '/credits/': 'Credits page.',
+    }
+    const title = `${pagesSubdescription[location.pathname] || '404 - Not found.'} LifeAroundFreaks' portfolio`
+    const description = 
+        "Mainly Python and JavaScript software developer portfolio " +
+        "with concrete examples of previous projects and various bits of information. " +
+        pagesSubdescription[location.pathname] || '404 - Page not found.'
 
     const [activeSubMenus, setActiveSubMenus] = useState<ActiveMenus>({})
     const [hoveredSubMenus, setHoveredSubMenus] = useState<ActiveMenus>({})
@@ -32,6 +49,14 @@ const Navbar: FC<NavbarElementProps> = ({ logo, links }) => {
         setHoveredSubMenus({ ...hoveredSubMenus, [index]: false })
     }
     return <>
+        <Helmet>
+            <title>{title}</title>
+            <link rel="canonical" href={remoteUrl} />
+            
+	        <meta property="og:title" content={title} />
+            <meta property="og:url" content={remoteUrl} />
+            <meta property="og:description" content={description} />
+        </Helmet>
         <SideMenu links={links} logo={logo} />
         <header id="header">
             <h1 id="logo">{logo}</h1>

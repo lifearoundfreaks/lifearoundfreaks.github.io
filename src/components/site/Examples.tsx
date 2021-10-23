@@ -1,4 +1,4 @@
-import { FC } from "react"
+import { FC, Fragment } from "react"
 import useScript from 'react-script-hook'
 import { useTranslation } from 'react-i18next'
 
@@ -17,14 +17,20 @@ const Examples: FC = () => {
 
                 <div className="col-4 col-12-medium">
                     <section id="sidebar">
-                        {[1, 2, 3, 4].map(exampleNumber => <><section>
+                        {[1, 2, 3, 4].map(exampleNumber => <Fragment key={exampleNumber}><section>
                             <a
                                 href={t(`example${exampleNumber} url`)}
                                 className="image fit"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <img src={`/images/example${exampleNumber}.jpg`} alt={`Example ${exampleNumber}`} />
+                                <img
+                                    src={`/images/example${exampleNumber}.jpg`}
+                                    loading="eager"
+                                    title={`Example ${exampleNumber} small image`}
+                                    alt={`Example ${exampleNumber}`}
+                                    width="100%" height="100%"
+                                />
                             </a>
                             <h3>{t(`example${exampleNumber} header`)}</h3>
                             <p>{t(`example${exampleNumber} shorttext`)}</p>
@@ -35,18 +41,24 @@ const Examples: FC = () => {
                             </footer>
                         </section>
                             {exampleNumber < 3 ? <hr /> : <></>}
-                        </>)}
+                        </Fragment>)}
                     </section>
                 </div>
                 <div className="col-8 col-12-medium">
-                    <section id="content">{[4, 1, 2, 3].map(exampleNumber => <section>
+                    <section id="content">{[4, 1, 2, 3].map(exampleNumber => <section key={exampleNumber}>
                         <a
                             href={t(`example${exampleNumber} url`)}
                             className="image fit"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src={`/images/example${exampleNumber}.jpg`} alt={`Example ${exampleNumber}`} />
+                            <img
+                                src={`/images/example${exampleNumber}.jpg`}
+                                loading="eager"
+                                title={`Example ${exampleNumber} image`}
+                                alt={`Example ${exampleNumber}`}
+                                width="100%" height="100%"
+                            />
                         </a>
                         <h3>{t(`example${exampleNumber} header`)}</h3>
                         <p>{t(`example${exampleNumber} paragraph1`)}</p>
