@@ -49,7 +49,7 @@ const Examples: FC = () => {
                                 </li></ul>
                             </footer>
                         </section>
-                            {exampleNumber != 3 ? <hr /> : <></>}
+                            {exampleNumber !== 3 ? <hr /> : <></>}
                         </Fragment>)}
                     </section>
                 </div>
