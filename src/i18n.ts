@@ -142,6 +142,22 @@ const resources = {
         and now this is a simple service for cropping small portions of youtube
         videos (I limited it to 1-minute portions).
         `,
+        // About page content
+        "about page expansion": `
+        Among my good qualities, I'd name thoroughness and insight. As for my
+        bad qualities, I can be a bit stubborn, especially when dealing with
+        my tasks. It can be hard for me to settle down for a simpler solution
+        when I initially had something more complex in mind.
+        Lately, I try to avoid that, however.`,
+        "about page addition": `
+        In my spare time, I play a lot of video games and write music. I also
+        sometimes code during it too and enjoy helping other people with fixing
+        their bugs or dealing with errors, quite often for free. Or even teaching
+        someone to code. Even though I mostly focus on Python and JavaScript
+        nowadays, I can still involve myself in other languages too, particularly
+        the ones I have previously used, like C#. Sometimes I wish I was more
+        proficient in a lower level language like C but, oh well, I have different priorities.
+        `,
     } },
     ru: { translation: {
         // Navbar
@@ -298,6 +314,23 @@ const resources = {
         Поэтому я отказался от многого
         и теперь это простой сервис для обрезки небольших кусочков Youtube
         видео (я сделал ограничение в одну минуту).
+        `,
+        // About page content
+        "about page expansion": `
+        Из своих хороших качеств я бы назвал дотошность и проницательность. Что до плохих,
+        я могу быть несколько упрямым, особенно во время выполнения своей задачи.
+        Мне бывает трудно смриться и применить более простое решение
+        если я изначально задумывал что-то более сложное.
+        Но в последнее время я стараюсь отказываться от этой привычки.
+        `,
+        "about page addition": `
+        В свободное время я много играю в видеоигры и пишу музыку. Порой код я пишу
+        даже когда не занят, а также, с удовольствием помогаю другим людям с исправлением
+        ошибок и устранением багов, зачастую бесплатно. Или даже обучаю кого-нибудь программированию.
+        Хотя, в данный момент я в основном и фокусируюсь на Python и JavaScript,
+        другие языки мне тоже по силам, особенно те, которые я использовал ранее, например, C#.
+        Иногда жалею, что нет хороших познаний в языке более низкого уровня,
+        например C, но, увы, у меня другие приоритеты.
         `,
         // Additional links
         "Source code": "Исходный код",
@@ -472,6 +505,23 @@ const resources = {
         Тому я відмовився багато від чого
         і тепер це простий сервіс для обрізки невеликих шматочків Youtube
         відео (я зробив обмеження в одну хвилину).
+        `,
+        // About page content
+        "about page expansion": `
+        Зі своїх хороших якостей я б назвав прискіпливість і проникливість. Щодо поганих,
+        я можу бути дещо впертим, особливо під час виконання свого завдання.
+        Мені буває важко змиритися і застосувати просте рішення
+        якщо я спочатку задумував щось складніше.
+        Але останнім часом я намагаюся відмовлятися від цієї звички.
+        `,
+        "about page addition": `
+        У вільний час я багато граю у відеоігри та пишу музику. Іноді код я пишу
+        навіть коли не зайнятий, а також із задоволенням допомагаю іншим людям з виправленням
+        помилок та усуненням багів, найчастіше безкоштовно. Або навіть навчаю когось програмуванню.
+        Хоча, зараз я в основному і фокусуюся на Python і JavaScript,
+        інші мови мені теж під силу, особливо ті, які я використовував раніше, наприклад C#.
+        Іноді шкодую, що немає хороших знань у мові нижчого рівня,
+        наприклад, C, але, на жаль, у мене інші пріоритети.
         `,
         // Additional links
         "Source code": "Вихідний код",

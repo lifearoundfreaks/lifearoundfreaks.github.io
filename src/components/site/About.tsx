@@ -10,10 +10,11 @@ const About: FC = () => {
     return <div className="wrapper"><div className="container">
         <header className="major">
             <h2>{t("About")}</h2>
-            <p></p>
+            <p>{t("mainpage two subheader")}</p>
         </header>
         <section>
-            <hr />
+            <p>{t("mainpage two paragraph")+t("about page expansion")}</p>
+            <p>{t("about page addition")}</p>
         </section>
     </div></div>
 }
