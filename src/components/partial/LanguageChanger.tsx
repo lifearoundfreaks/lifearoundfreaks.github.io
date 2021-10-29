@@ -1,10 +1,16 @@
-import { FC } from 'react'
-import i18n from 'i18next'
+import { FC, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCookies } from 'react-cookie'
 
 const LanguageChanger: FC = () => {
 
     const [, setCookie] = useCookies(['selected-language'])
+    const { t, i18n } = useTranslation()
+    const [rerenderHackTriggered, setRerenderHackTriggered] = useState(false)
+
+    useEffect(() => {
+        if (!rerenderHackTriggered) setRerenderHackTriggered(true)
+    }, [rerenderHackTriggered])
 
     const languageChangesTo: any = {
         'en': 'ru',
@@ -21,9 +27,9 @@ const LanguageChanger: FC = () => {
         }
     }>
         <img
-            src={`/assets/svg/${i18n.language}.svg`}
+            src={`/assets/svg/${i18n.language}.svg?${performance.now()}`}
             alt="Flag"
-            title="Language selector"
+            title={t("Language selector")}
             width="100%" height="100%"
             loading="eager"
             style={{
