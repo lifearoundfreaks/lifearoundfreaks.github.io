@@ -12,13 +12,18 @@ const Credits: FC = () => {
             <h2>{t("Credits")}</h2>
             <p>{t("Various info about the assets used in the creation of this site")}</p>
         </header>
-        <section>
-            <h3 style={{ textAlign: "center" }}>{t("Images are taken from")} <a href="https://www.pexels.com/"
+        <section style={{ textAlign: "center" }}>
+            <h3>{t("Template design")}</h3>
+            <p>{t("Design by")} <a href="http://html5up.net"
+                target="_blank"
+                rel="noopener noreferrer"
+            >HTML5 UP</a></p>
+            <h3>{t("Images are taken from")} <a href="https://www.pexels.com/"
                 target="_blank"
                 rel="noopener noreferrer"
             >Pexels</a> {t("and made by:")}
             </h3>
-            <ul style={{ listStyle: "none", padding: 0, textAlign: "center" }}>
+            <ul style={{ listStyle: "none", padding: 0 }}>
                 <li>Kevin Ku</li>
                 <li>Markus Spiske</li>
                 <li>Pixabay</li>

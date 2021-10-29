@@ -309,6 +309,7 @@ const resources = {
         "Различная информация о ресурсах, использованных при создании этого сайта",
         "Images are taken from": "Изображения взяты с",
         "and made by:": " и сделаны:",
+        "Template design": "Дизайн заготовки",
         // Footer
         "Made by lifearoundfreaks": "Сайт сделан lifearoundfreaks",
         "Design by": "Дизайн сделан",
@@ -482,6 +483,7 @@ const resources = {
         "Різна інформація про ресурси, використані при створенні цього сайту",
         "Images are taken from": "Зображення взяті з",
         "and made by:": "і зроблені:",
+        "Template design": "Дизайн заготівлі",
         // Footer
         "Made by lifearoundfreaks": "Сайт зроблено lifearoundfreaks",
         "Design by": "Дизайн створено",
