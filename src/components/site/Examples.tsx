@@ -80,7 +80,7 @@ const Examples: FC = () => {
                                 className="button"
                             >{t("Details")}</a>
                             {additionalLinks[exampleNumber] ? additionalLinks[exampleNumber].map(
-                                (link: { url: string, text: string }) => <li><a
+                                (link: { url: string, text: string }, index) => <li key={index}><a
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
