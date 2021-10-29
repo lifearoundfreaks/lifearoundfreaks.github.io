@@ -168,7 +168,7 @@ const resources = {
         "General info": "Общая информация",
         "Credits": "Источники",
         // Main
-        "I am a software developer": "Я разработчик программного обеспечения",
+        "I am a software developer": "Я разработчик ПО",
         "This is the personal website I": "Этот личный вебсайт был создан",
         "created to serve as my portfolio.": "мной в качестве портфолио.",
         "About my experience": "О моем опыте",
@@ -359,7 +359,7 @@ const resources = {
         "General info": "Загальна інформація",
         "Credits": "Джерела",
         // Main
-        "I am a software developer": "Я розробник програмного забезпечення",
+        "I am a software developer": "Я розробник ПО",
         "This is the personal website I": "Цей особистий вебсайт був створений",
         "created to serve as my portfolio.": "мною в якості портфоліо.",
         "About my experience": "Про мій досвід",
