@@ -43,6 +43,8 @@ const App: FC = () => {
     </Switch>
     <Footer copyright={t("Made by lifearoundfreaks")} links={[
       { link: 'https://github.com/lifearoundfreaks', icon: 'fa-github', linkName: 'Github' },
+      { link: 'https://www.linkedin.com/in/andriy-hanzha-356b95223/', icon: 'fa-linkedin', linkName: 'LinkedIn' },
+      { link: 'mailto:lifearoundfreaks@gmail.com', icon: 'fa-at', linkName: 'Gmail' },
     ]} />
   </Router></HelmetProvider>
 }
