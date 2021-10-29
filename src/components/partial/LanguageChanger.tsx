@@ -1,7 +1,10 @@
 import { FC } from 'react'
 import i18n from 'i18next'
+import { useCookies } from 'react-cookie'
 
 const LanguageChanger: FC = () => {
+
+    const [, setCookie] = useCookies(['selected-language'])
 
     const languageChangesTo: any = {
         'en': 'ru',
@@ -9,8 +12,14 @@ const LanguageChanger: FC = () => {
         'uk': 'en',
     }
 
+    const nextLang = languageChangesTo[i18n.language]
+
     return <div onClick={
-        () => i18n.changeLanguage(languageChangesTo[i18n.language])}>
+        () => {
+            i18n.changeLanguage(nextLang)
+            setCookie('selected-language', nextLang, { path: '/' })
+        }
+    }>
         <img
             src={`/assets/svg/${i18n.language}.svg`}
             alt="Flag"
