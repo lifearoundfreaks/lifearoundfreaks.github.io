@@ -1,5 +1,5 @@
 import { FC, useEffect } from 'react';
-import { MainPage, Examples, About, Credits, NotFound } from './components/site'
+import { MainPage, Examples, Resume, About, Credits, NotFound } from './components/site'
 import { Navbar, Footer } from './components/partial'
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router'
@@ -40,11 +40,12 @@ function FilledNavbar() {
     { link: '/', linkName: t('Home') },
     { link: '/examples/', linkName: t('Examples') },
     {
-      link: '/about/', linkName: t('About'), children: [
+      link: '/resume/', linkName: t('Resume'), children: [
+        { link: '/resume/', linkName: t('Resume') },
         { link: '/about/', linkName: t('General info') },
-        { link: '/credits/', linkName: t('Credits') },
       ],
     },
+    { link: '/credits/', linkName: t('Credits') },
   ]} />
 }
 
@@ -54,7 +55,7 @@ function FilledFooter() {
   return <Footer copyright={t("Made by lifearoundfreaks")} links={[
     { link: 'https://github.com/lifearoundfreaks', icon: 'fa-github', linkName: 'Github' },
     { link: 'https://www.linkedin.com/in/andriy-hanzha-356b95223/', icon: 'fa-linkedin', linkName: 'LinkedIn' },
-    { link: 'mailto:lifearoundfreaks@gmail.com', icon: 'fa-at', linkName: 'Gmail' },
+    { link: 'mailto:lifearoundfreaks@gmail.com', icon: 'fa-envelope', linkName: 'Gmail' },
   ]} />
 }
 
@@ -64,6 +65,7 @@ const App: FC = () => {
     <Switch>
       <Route path='/' exact><MainPage /></Route>
       <Route path='/examples'><Examples /></Route>
+      <Route path='/resume'><Resume /></Route>
       <Route path='/about'><About /></Route>
       <Route path='/credits'><Credits /></Route>
       <Route><NotFound /></Route>

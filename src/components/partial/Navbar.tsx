@@ -24,6 +24,7 @@ const Navbar: FC<NavbarElementProps> = ({ logo, links }) => {
     const pagesSubdescription: any = {
         '/': 'Homepage.',
         '/examples/': 'Examples of my work.',
+        '/resume/': 'Software developer resume.',
         '/about/': 'More about me.',
         '/credits/': 'Credits page.',
     }

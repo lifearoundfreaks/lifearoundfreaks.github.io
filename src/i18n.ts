@@ -142,6 +142,12 @@ const resources = {
         and now this is a simple service for cropping small portions of youtube
         videos (I limited it to 1-minute portions).
         `,
+        // Resume page content
+        "resume quality 1": "The desire to learn new languages and technologies when needed.",
+        "resume quality 2": "Willingness to take a test task if necessary.",
+        "resume quality 3": "Ability to both provide and use APIs (REST, GraphQL).",
+        "resume quality 4": "Teamwork experience, used Trello and Github Projects in the past.",
+        "resume quality 5": "Ability to work with Git and code review experience.",
         // About page content
         "about page expansion": `
         Among my good qualities, I'd name thoroughness and insight. As for my
@@ -164,6 +170,7 @@ const resources = {
         "lifearoundfreaks' portfolio": "Портфолио lifearoundfreaks",
         "Home": "Главная",
         "Examples": "Примеры",
+        "Resume": "Резюме",
         "About": "Обо мне",
         "General info": "Общая информация",
         "Credits": "Источники",
@@ -316,11 +323,38 @@ const resources = {
         и теперь это простой сервис для обрезки небольших кусочков Youtube
         видео (я сделал ограничение в одну минуту).
         `,
+        // Resume page content
+        "Andriy Hanzha": "Ганжа Андрей",
+        "Software Developer": "Разработчик ПО",
+        "Contact info": "Контактная информация",
+        "Portfolio": "Портфолио",
+        "Registered as": "Зарегистрирован как",
+        "Individual entrepreneur": "Физическое лицо-предприниматель",
+        "Preferred working conditions": "Предпочитаемые условия труда",
+        "Remote work is highly preferable. A flexible schedule is welcome. Both contractual work and official employment suit me.":
+        "Крайне предпочтительна удаленная работа. Приветствуется гибкий график. Меня устраивает как работа по контракту, так и официальное трудоустройство.",
+        "My qualities": "Мои качества",
+        "resume quality 1": "Желание изучать новые языки и технологии в случае их востребованности.",
+        "resume quality 2": "Готовность пройти тестовое задание при необходимости.",
+        "resume quality 3": "Умение как предоставлять, так и исользовать API (REST, GraphQL).",
+        "resume quality 4": "Опыт работы в команде и использования Trello, Github Project.",
+        "resume quality 5": "Умение работать с Git и опыт code review.",
+        "Work experience": "Опыт работы",
+        "Web-developer (Django, jQuery, HTML/CSS design)": "Веб-разработчик (Django, jQuery, HTML/CSS дизайн)",
+        "(2019 august - 2020 september)": "(август 2019 - сентябрь 2020)",
+        "Education": "Образование",
+        "Secondary General Education": "Среднее Общее Образование",
+        "Languages": "Языки",
+        "Web-frameworks / libraries": "Web-фреймворки / библиотеки",
+        "Other": "Другое",
+        "ORM experience": "Опыт c ORM",
+        "QA Automation": "QA автоматизация",
+        "and more...": "и другое...",
         // About page content
         "about page expansion": `
         Из своих хороших качеств я бы назвал дотошность и проницательность. Что до плохих,
         я могу быть несколько упрямым, особенно во время выполнения своей задачи.
-        Мне бывает трудно смриться и применить более простое решение
+        Мне бывает трудно смириться и применить более простое решение
         если я изначально задумывал что-то более сложное.
         Но в последнее время я стараюсь отказываться от этой привычки.
         `,
@@ -356,12 +390,13 @@ const resources = {
         "lifearoundfreaks' portfolio": "Портфоліо lifearoundfreaks",
         "Home": "Головна",
         "Examples": "Приклади",
+        "Resume": "Резюме",
         "About": "Про мене",
         "General info": "Загальна інформація",
         "Credits": "Джерела",
         "Language selector": "Вибір мови",
         // Main
-        "I am a software developer": "Я розробник ПО",
+        "I am a software developer": "Я розробник ПЗ",
         "This is the personal website I": "Цей особистий вебсайт був створений",
         "created to serve as my portfolio.": "мною в якості портфоліо.",
         "About my experience": "Про мій досвід",
@@ -508,6 +543,33 @@ const resources = {
         і тепер це простий сервіс для обрізки невеликих шматочків Youtube
         відео (я зробив обмеження в одну хвилину).
         `,
+        // Resume page content
+        "Andriy Hanzha": "Ганжа Андрій",
+        "Software Developer": "Розробник ПЗ",
+        "Contact info": "Контактна інформація",
+        "Portfolio": "Портфоліо",
+        "Registered as": "Зареєстрований як",
+        "Individual entrepreneur": "Фізична особа-підприємець",
+        "Preferred working conditions": "Бажані умови праці",
+        "Remote work is highly preferable. A flexible schedule is welcome. Both contractual work and official employment suit me.":
+        "Вкрай бажена віддалена робота. Вітається гнучкий графік. Мене влаштовує як робота за контрактом, так і офіційне працевлаштування.",
+        "My qualities": "Мої якості",
+        "resume quality 1": "Бажання вивчати нові мови та технології у разі їх затребуваності.",
+        "resume quality 2": "Готовність пройти тестове завдання за необхідності.",
+        "resume quality 3": "Уміння як надавати, так і використовувати API (REST, GraphQL).",
+        "resume quality 4": "Досвід роботи в команді та використання Trello, Github Project.",
+        "resume quality 5": "Уміння працювати з Git та досвід code review.",
+        "Work experience": "Досвід роботи",
+        "Web-developer (Django, jQuery, HTML/CSS design)": "Веб-розробник (Django, jQuery, HTML/CSS дизайн)",
+        "(2019 august - 2020 september)": "(серпень 2019 - вересень 2020)",
+        "Education": "Освіта",
+        "Secondary General Education": "Середня Загальна Освіта",
+        "Languages": "Мови",
+        "Web-frameworks / libraries": "Web-фреймворки / бібліотеки",
+        "Other": "Інше",
+        "ORM experience": "Досвід з ORM",
+        "QA Automation": "QA автоматизація",
+        "and more...": "та інше...",
         // About page content
         "about page expansion": `
         Зі своїх хороших якостей я б назвав прискіпливість і проникливість. Щодо поганих,
