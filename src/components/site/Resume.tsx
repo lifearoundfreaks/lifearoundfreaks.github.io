@@ -42,7 +42,7 @@ const Resume: FC = () => {
                         <p><Link to="/examples/">{t("Examples of my work")}</Link></p>
                         <h3>{t("Registered as")}</h3>
                         <p><a
-                            href="https://lookup.in.ua/entities/1d17d910-b6a9-4580-b3c1-045eadaaa7a0"
+                            href="https://lookup.in.ua/entities/cf4c6bfb-5719-4bf0-a3b6-8ef1b7749b80?referral=%2Fsearch%3Ftext%3D%25D0%2593%25D0%25B0%25D0%25BD%25D0%25B6%25D0%25B0%2520%25D0%2590%25D0%25BD%25D0%25B4%25D1%2580%25D1%2596%25D0%25B9"
                             target="_blank"
                             rel="noopener noreferrer"
                         >{t("Individual entrepreneur")}</a></p>
