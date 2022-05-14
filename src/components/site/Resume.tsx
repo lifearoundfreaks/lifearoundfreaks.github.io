@@ -56,12 +56,18 @@ const Resume: FC = () => {
                             <li>{t("resume quality 5")}</li>
                         </ul>
                         <h3>{t("Work experience")}</h3>
-                        <h5>{t("Web-developer (Django, jQuery, HTML/CSS design)")}</h5>
+                        <h5>{t("Web-developer")} (Django, jQuery, {t("HTML/CSS design")})</h5>
                         <p><a
                             href="https://profbit.com.ua/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >ProfBIT</a> <sub>{t("(2019 august - 2020 september)")}</sub></p>
+                        <h5>{t("Web-developer")} (Node, React, {t("HTML/CSS design")})</h5>
+                        <p><a
+                            href="https://www.upwork.com/o/companies/~012ac774459134d21c/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Iterix</a> <sub>{t("(2021 november - 2022 february)")}</sub></p>
                         <h3>{t("About")}</h3>
                         <p>{t("mainpage two paragraph") + t("about page expansion")}</p>
                         <h3>{t("Education")}</h3>
@@ -173,6 +179,13 @@ const Resume: FC = () => {
                             </tr>
                             <tr>
                                 <td>Bootstrap</td>
+                                <td>
+                                    <span className="icon fa-star" />
+                                    <span className="icon fa-star" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Redux</td>
                                 <td>
                                     <span className="icon fa-star" />
                                     <span className="icon fa-star" />
