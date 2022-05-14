@@ -78,7 +78,7 @@ const Navbar: FC<NavbarElementProps> = ({ logo, links }) => {
                             display: "block",
                             background: "rgba(39, 40, 51, 0.965)",
                             position: "absolute",
-                            right: "15%",
+                            right: "25%",
                             minWidth: "100px",
                             borderRadius: "5px",
                             paddingRight: "1em",
