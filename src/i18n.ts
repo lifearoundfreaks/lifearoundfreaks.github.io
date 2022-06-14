@@ -142,6 +142,15 @@ const resources = {
         and now this is a simple service for cropping small portions of youtube
         videos (I limited it to 1-minute portions).
         `,
+        // Job specialization info
+        "job 1 specialization 1": "Implemented new e-commerce features on both the backend and frontend.",
+        "job 1 specialization 2": "Worked on API integration, both internal (between our own services) and external (for example, worked on the payment method and delivery service integrations).",
+        "job 1 specialization 3": "Participated in the code reviewing process.",
+        "job 1 specialization 4": "Maintained complex codebases, including legacy code refactoring and bug fixing.",
+        "job 2 specialization 1": "Implemented front-end user experience according to design mockups.",
+        "job 2 specialization 2": "Insured the accordance of already implemented features to the constantly changing design.",
+        "job 2 specialization 3": "Worked on integration with the backend.",
+        "job 2 specialization 4": "Project maintenance, including frontend and backend bugfixes, design inconsistencies elimination,  as well as some refactoring.",
         // Resume page content
         "resume quality 1": "The desire to learn new languages and technologies when needed.",
         "resume quality 2": "Willingness to take a test task if necessary.",
@@ -323,6 +332,15 @@ const resources = {
         и теперь это простой сервис для обрезки небольших кусочков Youtube
         видео (я сделал ограничение в одну минуту).
         `,
+        // Job specialization info
+        "job 1 specialization 1": "Реализовывал функционал электронной коммерции как на серверной, так и на внешней стороне.",
+        "job 1 specialization 2": "Работал как над внутренней API интеграцией (между нашими собственными сервисами), так и внешней (например, работал над интеграцией способов оплаты и служб доставки).",
+        "job 1 specialization 3": "Участвовал в процессе проверки кода.",
+        "job 1 specialization 4": "Поддерживал сложные кодовые базы, включая рефакторинг устаревшего кода и исправление ошибок.",
+        "job 2 specialization 1": "Реализовывал пользовательский интерфейс в соответствии с макетами дизайна.",
+        "job 2 specialization 2": "Обеспечивал соответствие уже реализованного функционала с постоянно меняющимся дизайном.",
+        "job 2 specialization 3": "Занимался интеграцией с серверной частью.",
+        "job 2 specialization 4": "Сопровождал проект, включая исправление ошибок в пользовательской и серверной части, устранение несоответствий дизайна, а также некоторый рефакторинг.",
         // Resume page content
         "Andriy Hanzha": "Ганжа Андрей",
         "Software Developer": "Разработчик ПО",
@@ -545,6 +563,15 @@ const resources = {
         і тепер це простий сервіс для обрізки невеликих шматочків Youtube
         відео (я зробив обмеження в одну хвилину).
         `,
+        // Job specialization info
+        "job 1 specialization 1": "Реалізував функціонал електронної комерції як на серверній, так і зовнішній стороні.",
+        "job 1 specialization 2": "Працював як над внутрішньою API інтеграцією (між нашими власними сервісами), так і зовнішньою (наприклад, працював над інтеграцією способів оплати та служб доставки).",
+        "job 1 specialization 3": "Брав участь у процесі перевірки коду.",
+        "job 1 specialization 4": "Підтримував складні кодові бази, включаючи рефакторинг застарілого коду та виправлення помилок.",
+        "job 2 specialization 1": "Реалізував інтерфейс користувача відповідно до макетів дизайну.",
+        "job 2 specialization 2": "Забезпечував відповідність вже реалізованого функціоналу з постійно змінним дизайном.",
+        "job 2 specialization 3": "Займався інтеграцією з серверною частиною.",
+        "job 2 specialization 4": "Супроводжував проект, включаючи виправлення помилок у користувальницькій та серверній частині, усунення невідповідностей дизайну, а також деякий рефакторинг.",
         // Resume page content
         "Andriy Hanzha": "Ганжа Андрій",
         "Software Developer": "Розробник ПЗ",
