@@ -62,24 +62,28 @@ const Resume: FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >ProfBIT</a> <sub>{t("(2019 august - 2020 september)")}</sub></p>
+                        <p>{t("job 1 description")}</p>
                         <ul>
                             <li>{t("job 1 specialization 1")}</li>
                             <li>{t("job 1 specialization 2")}</li>
                             <li>{t("job 1 specialization 3")}</li>
                             <li>{t("job 1 specialization 4")}</li>
                         </ul>
+                        <p>{t("Important technologies")}: Django, jQuery, Redis</p>
                         <h5>{t("Web-developer")} (Node, React, {t("HTML/CSS design")})</h5>
                         <p><a
                             href="https://www.upwork.com/o/companies/~012ac774459134d21c/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >Iterix</a> <sub>{t("(2021 november - 2022 february)")}</sub></p>
+                        <p>{t("job 2 description")}</p>
                         <ul>
                             <li>{t("job 2 specialization 1")}</li>
                             <li>{t("job 2 specialization 2")}</li>
                             <li>{t("job 2 specialization 3")}</li>
                             <li>{t("job 2 specialization 4")}</li>
                         </ul>
+                        <p>{t("Important technologies")}: ReactJS, Express, Redux</p>
                         <h3>{t("About")}</h3>
                         <p>{t("mainpage two paragraph") + t("about page expansion")}</p>
                         <h3>{t("Education")}</h3>
@@ -140,6 +144,13 @@ const Resume: FC = () => {
                                 <td>ReactJS</td>
                                 <td>
                                     <span className="icon fa-star" />
+                                    <span className="icon fa-star" />
+                                    <span className="icon fa-star" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Express</td>
+                                <td>
                                     <span className="icon fa-star" />
                                     <span className="icon fa-star" />
                                 </td>

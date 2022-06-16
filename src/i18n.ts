@@ -143,6 +143,8 @@ const resources = {
         videos (I limited it to 1-minute portions).
         `,
         // Job specialization info
+        "job 1 description": "Large e-commerce projects with hundreds of thousands of products and their variants, localization, complex product filtering features, customer support, well-developed consumer analysis tools, and multiple inter-project integrations.",
+        "job 2 description": "A customer service providing online veterinary consultation. Featured online cabinet management tools with the help of which users could provide various detailed info about their animals.",
         "job 1 specialization 1": "Implemented new e-commerce features on both the backend and frontend.",
         "job 1 specialization 2": "Worked on API integration, both internal (between our own services) and external (for example, worked on the payment method and delivery service integrations).",
         "job 1 specialization 3": "Participated in the code reviewing process.",
@@ -333,6 +335,8 @@ const resources = {
         видео (я сделал ограничение в одну минуту).
         `,
         // Job specialization info
+        "job 1 description": "Крупные проекты электронной коммерции с сотнями тысяч продуктов и их вариантов, локализацией, сложными функциями фильтрации продуктов, поддержкой клиентов, хорошо проработанными инструментами анализа потребителей и многочисленными межпроектными интеграциями.",
+        "job 2 description": "Служба поддержки клиентов, предоставляющая ветеринарные онлайн-консультации. Включала онлайн-инструменты управления кабинетом, с помощью которых пользователи могут предоставлять различную подробную информацию о своих животных.",
         "job 1 specialization 1": "Реализовывал функционал электронной коммерции как на серверной, так и на внешней стороне.",
         "job 1 specialization 2": "Работал как над внутренней API интеграцией (между нашими собственными сервисами), так и внешней (например, работал над интеграцией способов оплаты и служб доставки).",
         "job 1 specialization 3": "Участвовал в процессе проверки кода.",
@@ -366,6 +370,7 @@ const resources = {
         "Secondary General Education": "Среднее Общее Образование",
         "Languages": "Языки",
         "Web-frameworks / libraries": "Web-фреймворки / библиотеки",
+        "Important technologies": "Важные технологии",
         "Other": "Другое",
         "ORM experience": "Опыт c ORM",
         "QA Automation": "QA автоматизация",
@@ -564,6 +569,8 @@ const resources = {
         відео (я зробив обмеження в одну хвилину).
         `,
         // Job specialization info
+        "job 1 description": "Великі проекти електронної комерції з сотнями тисяч продуктів та їх варіантів, локалізацією, складними функціями фільтрації продуктів, підтримкою клієнтів, розвинутими інструментами аналізу споживачів та численними міжпроектними інтеграціями.",
+        "job 2 description": "Служба підтримки клієнтів, що надає ветеринарні онлайн-консультації. Включала онлайн-інструменти управління кабінетом, за допомогою яких користувачі можуть надавати різноманітну докладну інформацію про своїх тварин.",
         "job 1 specialization 1": "Реалізував функціонал електронної комерції як на серверній, так і зовнішній стороні.",
         "job 1 specialization 2": "Працював як над внутрішньою API інтеграцією (між нашими власними сервісами), так і зовнішньою (наприклад, працював над інтеграцією способів оплати та служб доставки).",
         "job 1 specialization 3": "Брав участь у процесі перевірки коду.",
@@ -597,6 +604,7 @@ const resources = {
         "Secondary General Education": "Середня Загальна Освіта",
         "Languages": "Мови",
         "Web-frameworks / libraries": "Web-фреймворки / бібліотеки",
+        "Important technologies": "Важливі технології",
         "Other": "Інше",
         "ORM experience": "Досвід з ORM",
         "QA Automation": "QA автоматизація",
